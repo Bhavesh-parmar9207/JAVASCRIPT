@@ -58,3 +58,16 @@ console.log(Object.entries(tinderUser));
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));//to question to the object that parameter is there or not
 
 
+// ================= Object-Destructure ================= //
+
+const course = {
+    name : "English",
+    price : "999",
+    courseInstructor : "Yash"
+}
+
+// course.courseInstructor
+
+const {courseInstructor: Instructure} = course // destructure {oldname : newname}
+// console.log(courseInstructor);
+console.log(Instructure);
