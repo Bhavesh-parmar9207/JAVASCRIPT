@@ -28,7 +28,7 @@ console.log("B" ,myArr);
 
 //Splice
 
-const myn2 = myArr.splice(1,3)//remove that portion
+const myn2 = myArr.splice(1,3)//remove that portion`
 console.log("C" ,myArr);
 console.log(myn2);
 
