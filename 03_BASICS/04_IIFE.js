@@ -2,7 +2,7 @@
 
 (function chai(){
 //Named IIFE
-    console.log('DB CONNECTED');
+    console.log('DB CONNECTED   ');
 })();
 
 // hERE ()() first for function second to execution call 
