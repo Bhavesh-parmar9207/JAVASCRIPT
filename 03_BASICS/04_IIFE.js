@@ -12,3 +12,4 @@
 ((name) => {
     //simple IIFE
     console.log(`DB CONNECTED AGAIN ${name}`);
+})
