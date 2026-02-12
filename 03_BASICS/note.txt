@@ -1,0 +1,15 @@
+JavaScript Execution Context
+
+- when ever we create a file of JS it create a Global Execution Context
+- in that there is refered a (This)=> that GEC will be placed in This
+- in brownser ES are different so value of This is Window object 
+- JS is Single threaded
+
+-Eval Execution Context ( in Mongus Documentation ).which is type of property of global.
+
+- Function Execution Context
+
+# How JS code executing?
+- It run in 2 phases 
+1. Memory Creation phase ==> allocation of memory for code
+2. Execution phase ==> perfomance of operations
