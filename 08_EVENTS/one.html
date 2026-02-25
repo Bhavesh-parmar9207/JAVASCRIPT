@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Html Events</title>
+</head>
+
+<body style="background-color: black;   color: aliceblue; ">
+        <h2>
+                <ul id="images">
+                        <li><img width="200px" id="photoshop"
+                                        src="https://images.pexels.com/photos/3561339/pexels-photo-3561339.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                        alt="photoshop"></li>
+                        <li><img width="200px" id="japan"
+                                        src="https://images.pexels.com/photos/3532553/pexels-photo-3532553.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                        alt=""></li>
+                        <li><img width="200px" id="river"
+                                        src="https://images.pexels.com/photos/3532551/pexels-photo-3532551.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                        alt=""></li>
+                        <li><img width="200px" id="owl"
+                                        src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                        alt=""></li>
+                        <!-- onclick="alert('owl')" | method is workable but not for big scale  -->
+                        <li><img width="200px" id="prayer"
+                                        src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                                        alt=""></li>
+                        <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+                </ul>
+        </h2>
+
+</body>
+<script>
+        // document.getElementById('owl').onclick = function (){
+        //         alert("owl clicked")
+        // } that is workable but it ca't give multiple features
+
+        // document.getElementById('owl').addEventListener('click', function(){
+        //         alert("owl clikced again")
+        // }, false) => that's one of the best way for event handling
+
+
+
+        //below is for bubbling => when it's ffalse => where it works from bottom to top(first print owl alicked then first one)
+        // document.getElementById('images').addEventListener('click', function (e) {
+        //         console.log("clicked images in ul");
+        // }, false)
+        // document.getElementById('owl').addEventListener('click', function (e) {
+        //         console.log("owl clicked");
+        //         e.stopPropagation();//for stop propagation
+        // }, false)
+
+        // document.getElementById('google').addEventListener('click', function (e) {
+        //         e.preventDefault();
+        //         e.stopPropagation();//stop bubbling
+        //         console.log("google clicked");
+        // }, false)
+
+
+
+        //type, timestamp, defaultPrevented, target, toElement, srcElement, currentTarget
+        // clientX, clientY, screenX, screenY, altKey, ctrlKey, shiftKey, metaKey => interview point
+        //altKey, ctrlKey, shiftKey, metaKey => keyboard event
+
+        // Event propagation => bubbling(default = false | Majorly used) and capturing
+
+
+
+
+
+        document.querySelector('#images').addEventListener('click', function (e) {
+                console.log(e);
+                console.log(e.target.parentNode) //=> to get whole li of that clicked photo
+                console.log(e.target.tagName) //=> to get clicked tag name
+                if (e.target.tagName == 'IMG') {
+                        console.log(e.target.id);
+
+                        let removeIt = (e.target.parentNode);
+                        removeIt.remove();
+                }
+
+        })
+        // removeIt.parentNode.removeChild(removeIt); // it goes to first to child then correct clicked li then remove it
+        //but if we click to the li then it remove all images
+</script>
+
+
+
+</html>
