@@ -10,7 +10,7 @@ const repoCount = 50;
 const gameName = new String('bhavesh-parmar')//another way to create string using String constructor
 // console.log(gameName[0]);//B
 
-// console.log(gameName.__proto__);//14
+// console.log(gameName.__proto__);//{}
 
 // console.log(gameName.length);//14
 // console.log(gameName.toUpperCase());//BHAVESH PARMAR
@@ -27,7 +27,7 @@ const gameName = new String('bhavesh-parmar')//another way to create string usin
 const stringWithSpace = "    bhavesh     ";
 console.log(stringWithSpace)    
 console.log(stringWithSpace.trim());//removes space from both side
-
+console.log(stringWithSpace.length);//14
 const url = "www.bhavesh.com/profile/bhavesh parmar";
 console.log(url.replace("bhavesh parmar","bhavesh-parmar"));//replaces first occurence
 
@@ -35,4 +35,4 @@ console.log(url.replace("bhavesh parmar","bhavesh-parmar"));//replaces first occ
 console.log(url.includes('bhavesh'));//true => checks if substring is present or not
 
 
-console.log(gameName.split('-'));//splits string into array of characters
+console.log(gameName.split('-'));//splits string into array of characters where - occurs

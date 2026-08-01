@@ -1,11 +1,10 @@
-const accountId = 123456;
-let accountEmail = "abc@gmail.com"
-var accountPassword = "23568"//don't use var
-accountcity = "London"
+const accountId = 123456;//block-scoped but cannot be reassigned after initialization
+let accountEmail = "abc@gmail.com" //block-scoped, allows reassignment but not redeclaration
+var accountPassword = "23568"//don't use var because of function-scoped and allows both redeclaration
 
 let accountState; //undefined which shows vallue is not assigned
 
-// accountId = 2 //beacuse of const we cannot reassign
+accountId = 2 //beacuse of const we cannot reassign
 
 console.log(accountId);
 accountEmail = "ab@gmail.com"

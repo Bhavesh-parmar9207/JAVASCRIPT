@@ -20,23 +20,16 @@ const myArr2 = new Array(1, 2, 3, 4)
 // console.log(newArr);//here type is change to String and bind
 
 //================= Slice , Splice ======================//
+//Slice => it returns a copy of selected part of array does not modify the original array
 console.log("A",myArr); 
+//array.slice(start, end)
 const myn1 =(myArr.slice(1,3))//returns a this section of Array
 console.log(myn1);
 
 console.log("B" ,myArr);
 
-//Splice
+//Splice => adds, removes, or replaces elements in an array by modifying the original array.
 
-const myn2 = myArr.splice(1,3)//remove that portion`
+const myn2 = myArr.splice(1,3)//remove that portion
 console.log("C" ,myArr);
 console.log(myn2);
-
-
-
-
-
-
-
-
-

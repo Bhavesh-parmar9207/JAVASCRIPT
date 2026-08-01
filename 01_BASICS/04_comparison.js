@@ -6,7 +6,7 @@
 // console.log( 2 == 1);
 // console.log( 2 != 1);
 
-// avoid below type coercion
+// avoid below type correction
 
 //always compare same type
 // console.log("2" > 1);//auto convert to num 
@@ -20,4 +20,4 @@
 
 
 // === strict equality operator => also checks datatype
-console.log("2" === 2);
+console.log("2" === "2");

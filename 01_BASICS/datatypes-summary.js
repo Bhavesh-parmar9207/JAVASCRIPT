@@ -28,7 +28,6 @@
 // =>Object
 // =>Array
 // =>Function
-
 // */
 
 
@@ -46,7 +45,7 @@
 // /*==================================================================================================================== */
 
 // //2 Tyep of memory
-// //Stack memory(Primitve) and Heap memory(Reference, Non-primitive
+// //Stack memory(Primitve) and Heap memory(Reference, Non-primitive)
 
 let myName = "Bhavesh";//stored in stack memory
 let anotherName = myName;
@@ -56,14 +55,14 @@ console.log(anotherName);
 //output: Bhavesh, abc
 //in stack memory, each variable give it's own copy of the data
 
-let use1={
+let user1={
     email : "abc@gmail.com",
     upi  : "use@ylb"
 }
-let user2 = use1;//it gives you the reference of the object(user1)
+let user2 = user1;//it gives you the reference of the object(user1)
 //in heap memory, it give original address of the object
 
 user2.email = "xyz@gmail.com";
-console.log(use1.email);
+console.log(user1.email);
 console.log(user2.email);
 //output: xyz@gmail.com, xyz@gmail.com==>both are same because both are referring to the same object in heap memory

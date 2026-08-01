@@ -9,7 +9,7 @@ let myDate = new Date()
 // console.log(typeof myDate);//object
 
 
-// let myCreatedDate = new Date(2025, 0, 26) => Sun Jan 26 2025
+// let myCreatedDate = new Date(2025, 0, 26) //=> Sun Jan 26 2025
 // let myCreatedDate = new Date(2025, 0, 26, 5, 5) // => 1/26/2025, 5:05:00 AM
 // let myCreatedDate = new Date("2023-01-04") // "YYYY-MM-DD"
 let myCreatedDate = new Date("01-04-2023")

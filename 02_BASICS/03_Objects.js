@@ -29,7 +29,6 @@ const jsUser = {
 // jsUser.email = "bhavesh@microsoft.com"
 // console.log(jsUser);
 
-
 //functions which is treat as variables
 jsUser.greeting = function(){
     console.log("Hello JS Users");

@@ -2,7 +2,7 @@ const marvel_heros = ["thor", "Ironman","Spiderman"]
 const dc_heros = ["superman", "flash","batman"]
 
 // marvel_heros.push(dc_heros)// give dc in marvel as 3rd 
-// console.log(marvel_heros[3][1]); // =>flash
+// console.log(marvel_heros[3][1]); // =>flash [outer array index][inner array index]
 //console.log(marvel_heros); 
 
 // const all_heroos = marvel_heros.concat(dc_heros) // => now this merge and gives all in one herros

@@ -1,9 +1,10 @@
 // let score = null
-// console.log(typeof score);
-// console.log(typeof(score));
+// console.log(typeof score);//=>objet
+// console.log(typeof(score));//=>objet
+
 // let valueInNumber = Number(score); // conversion from string to number
-// console.log(typeof valueInNumber);
-// console.log(valueInNumber);
+// console.log(typeof valueInNumber);//number
+// console.log(valueInNumber);//0
 
 
 
@@ -21,11 +22,11 @@ in boolean conversion{
 
 
 
-//1 to boolean conversion
+// 1 to boolean conversion
 // let isLoggedIn = 1;
 // let booleanIsLoggedIn = Boolean(isLoggedIn);
-// console.log(booleanIsLoggedIn);
-// console.log(typeof booleanIsLoggedIn);
+// console.log(booleanIsLoggedIn);//1-true
+// console.log(typeof booleanIsLoggedIn);//boolean
 /*
 1 => true; 0 => false
 "" => false
@@ -36,7 +37,7 @@ in boolean conversion{
 
 
 //num to String
-let someNumber = 11
-let stringNumber = String(someNumber)
-console.log(typeof stringNumber);
-console.log(stringNumber);
+// let someNumber = 11
+// let stringNumber = String(someNumber)
+// console.log(typeof stringNumber);//string
+// console.log(stringNumber);//11
