@@ -1,3 +1,5 @@
+// Objects in JS => An object is a collection of properties (data) and methods (functions) that describe one thing.
+
 // 2 ways to declare = Constructor | literals(no singleton)
 
 // Constructor
@@ -10,7 +12,7 @@ const mySym = Symbol("key1") // => Symbol is declared like this
 
 const jsUser = {
     name : "Bhavesh",
-    "full name" : "Bhavesh Parmar",//=>this only accecible for ["full name" ] decleration
+    "full name" : "Bhavesh Parmar",//=>this only accecible for ["full name"] decleration
     [mySym] : "mykey1",// => this is the correct way to declare symbol as key in [ ]
     age : 18,
     location : "Ahmedabad",
@@ -29,7 +31,7 @@ const jsUser = {
 // jsUser.email = "bhavesh@microsoft.com"
 // console.log(jsUser);
 
-//functions which is treat as variables
+// functions which is treat as variables
 jsUser.greeting = function(){
     console.log("Hello JS Users");
     
