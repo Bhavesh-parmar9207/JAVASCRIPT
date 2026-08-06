@@ -8,8 +8,7 @@
 // hERE ()() first for function second to execution call 
 
 //sometimes if there is multiple iife implemented then we need end first function with ;
-
 ((name) => {
     //simple IIFE
     console.log(`DB CONNECTED AGAIN ${name}`);
-})
+})();
