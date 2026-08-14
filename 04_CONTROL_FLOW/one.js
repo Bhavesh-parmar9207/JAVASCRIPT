@@ -1,15 +1,15 @@
-// // //code never runs complete it should be run in conditional based flow (at a time login)
+//code never runs complete it should be run in conditional based flow (at a time login)
 
-// // //if-Statement
-// // // true = Execute , false = not execute
-// // // <,>,<=,>=,==,!=,===  
-// // const tempreture = 45
-// // if(tempreture < 50 ){
-// // console.log("temp is < 50");
-// // }else{
-// //     console.log("temp is >50");
-    
-// // }
+//if-Statement
+// true = Execute , false = not execute
+// <,>,<=,>=,==,!=,=== 
+
+// const tempreture = 45
+// if(tempreture < 50 ){
+// console.log("temp is < 50");
+// }else{
+//     console.log("temp is >50");
+// }    
 
 // const score = 100
 // if(score >= 100 ){
@@ -20,7 +20,7 @@
 // // console.log(`${power} is not accessable out of scope}`);
 
 
-//implisit scope = assumes that there is scope (It's not correct way for write code)
+//implicit scope = assumes that there is scope (It's not correct way for write code)
 //const balance = 1000
 // if (balance > 100 ) console.log("test");
 //nested
@@ -32,7 +32,7 @@
 //     console.log("less than 950");
 // } else if (balance < 1200 ){
 //     console.log("less than 1200");
-// }
+// }    
 
 
 //Multiple Constion => if one condition is not passed then can't run whole code
