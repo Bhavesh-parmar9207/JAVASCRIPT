@@ -4,18 +4,18 @@
 // //     return item
 
 // // })
-// // console.log(values);//it gives values but not return anything | fro that we have to return 
+// // console.log(values);//it gives values but not return anything | for that we have to return 
 // // //foreach never returns values there is always undefined    
 
 
 // //conditional
 
-// const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// // const newNums = myNums.filter((num) => {return num > 4})//here it return the values | if we use {} then we have to  return explicitly 
-// // console.log(newNums);
+// const newNums = myNums.filter((num) => {return num > 4}) //here it return the values | if we use {} then we have to return explicitly 
+// console.log(newNums);
 
-// //using foreach 
+//using foreach 
 // const newNums = []
 // myNums.forEach((num) => {
 //     if (num > 4) {

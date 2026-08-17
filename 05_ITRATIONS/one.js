@@ -37,7 +37,7 @@ for (let i = 0; i < myArray.length; i++) {
 // break and continue
 
 //favourite value comes then get out
-for (let i = 1; i <= 20; i++) {
+for (let i = 1; i <= 10; i++) {
     if(i == 5){
         console.log(`Detected 5`);
         // break => from here next iterations are not execute

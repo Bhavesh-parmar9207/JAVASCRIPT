@@ -8,10 +8,8 @@ const myNums = [1, 2, 3,]
 // }, 0)//after scope give value will take by acc for first iteation
 
 //with arrow function
-// const mtTotal = myNums.reduce((acc, currval) => acc + currval, 0)
-
-
-// console.log(mtTotal);
+const mtTotal = myNums.reduce((acc, currval) => {console.log(`acc value is : ${acc} & currval is ${currval}`); return acc + currval}, 0)
+console.log(mtTotal);
 
 
 
@@ -30,5 +28,5 @@ const shoppingcart = [
     }
 ]
 
-const mtTotal = shoppingcart.reduce((acc, item) => acc + item.price, 0)
-console.log(mtTotal);
+// const mtTotal = shoppingcart.reduce((acc, item) => acc + item.price, 0)
+// console.log(mtTotal);
