@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const sayBhavesh = function(){
+        console.log("Bhavesh");
+    }
+    // document.querySelector('h1').innerHTML = "Hello, Bhavesh!"; //it directly change the value 
+
+    const changeTxt = function(){
+        document.querySelector('h1').innerHTML = "Bhavesh"; 
+    }
+    const changeMe = setTimeout(changeTxt, 2000)//here we only take the reference of function not the function call
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe);
+        console.log("Stopped");
+    })
+
+
+</script>
+</html>
