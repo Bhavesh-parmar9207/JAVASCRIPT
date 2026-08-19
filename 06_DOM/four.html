@@ -21,8 +21,8 @@
     // addLanguage("Python")
     // addLanguage("Java")
     // addLanguage("C++")
-    //with this way it will hard to store because it traverse the tree every time 
-    //which give problem on large number of entries which gives optimise issue in real world projects
+    // with this way it will hard to store because it traverse the tree every time 
+    // which give problem on large number of entries which gives optimise issue in real world projects
 
 
     function addOptiLang(langName) {
@@ -38,16 +38,18 @@
 
     //edit in dom   
     const secondLang = document.querySelector("li:nth-child(2)")
+    
     // secondLang.innerHTML = "typescript" => it's not optimised approach 
+    console.log(secondLang);
     const newLang = document.createElement("li")//create li
     newLang.textContent = "typescript"
     secondLang.replaceWith(newLang)
 
-    //edit with outerHTML
+    // //edit with outerHTML
     const fistLang = document.querySelector("li:first-child")
     fistLang.outerHTML = `<li>Typescript</li>`
 
-    //remove element
+    // //remove element
     const lastLang = document.querySelector("li:last-child")
     lastLang.remove()
 

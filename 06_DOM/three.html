@@ -12,21 +12,26 @@
 </body>
 <script>
     //random id
-    const div = document.createElement('div')
+    const div = document.createElement('div')//for create new div element
     console.log(div);
     div.className = "main"
     div.id = Math.round(Math.random() * 10)//by default function
+
     //for custom attribute set
     div.setAttribute("title", "generated title")
+
     //styling
-    div.style.backgroundColor = "green"
+    div.style.backgroundColor = "orange"
     div.style.padding = "12px"
-    // div.innerText = "Bhavesh" //gives name text to div
+    // div.innerText = "bhavesh" //gives name text to div
+
     //attaching
-    const addText = document.createTextNode("bhavesh ")
-    div.appendChild(addText)
+    const addText = document.createTextNode("Bhavesh")
+    div.appendChild(addText)    
     document.body.appendChild(div)
 
+    // const changeText = document.createTextNode("Bhavesh")
+    // div.replaceChild(changeText, addText)
 
 
 </script>
