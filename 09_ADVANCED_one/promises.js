@@ -1,4 +1,141 @@
-//Promises =>  built-in object that acts as a placeholder for the future result of an asynchronous operation
+//Promise => “I don't have the result right now, but I will give you the result later — either success or failure.”
+// ----- BASIC EXAMPLE ----- // 
+// const myPromise = new Promise((resolve, reject) => {
+
+//     // Some asynchronous operation
+//     let success = true;
+
+//     if (success) {
+//         resolve("Operation successful!");
+//     } else {
+//         reject("Operation failed!");
+//     }
+
+// });
+
+// myPromise
+//     .then((result) => {
+//         console.log(result);
+//     })
+//     .catch((error) => {
+//         console.log(error);
+//     });
+
+/*
+ - resolve and reject are functions provided by JavaScript.
+ - resolve() Used when the operation is successful. ==> it pass .then(result)
+ - reject() Used when something goes wrong. ==> it pass .catch(error)
+
+before all of  this js use callback which is very difficult for increase the oprations which is called callback hell.
+
+- Modern js uses goes step up with async/await
+ */
+
+/*
+# Async/Await => async makes a function Promise-based, and await tells JavaScript to wait for a Promise's result before continuing that async function.
+// ----- BASIC EXAMPLE ----- // 
+function getUser() {
+    return new Promise((resolve) => {
+
+        setTimeout(() => {
+            resolve("User data received");
+        }, 2000);
+
+    });
+}
+
+async function showUser() {
+
+    const user = await getUser();
+
+    console.log(user);
+}
+
+//flow
+showUser();
+showUser()
+    ↓
+getUser()
+    ↓
+Promise returned
+    ↓
+await
+    ↓
+Promise pending
+    ↓
+2 seconds
+    ↓
+resolve()
+    ↓
+"user data received"
+    ↓
+console.log()
+
+fetch() => is a built-in Web API used to make HTTP requests.returns a Promise.
+fetch("https://api.example.com/users")
+    .then((response) => {
+        console.log(response);
+    })
+    .catch((error) => {
+        console.log(error);
+    });
+
+
+Because fetch() returns a Promise, we can use await.
+    
+async function getUsers() {
+
+    const response = await fetch("https://api.example.com/users");
+
+    console.log(response);
+}
+----------------------------------------------------------------------------------------
+async function getUsers() {
+
+    const response = await fetch("/api/users");
+
+    const data = await response.json();
+
+    console.log(data);
+}
+
+//bts   
+getUsers()
+    ↓
+fetch("/api/users")
+    ↓
+HTTP request sent
+    ↓
+Promise = pending
+    ↓
+await
+    ↓
+JavaScript can continue other work
+    ↓
+Server responds
+    ↓
+Promise = fulfilled
+    ↓
+response received
+    ↓
+response.json()
+    ↓
+Another Promise
+    ↓
+await
+    ↓
+JSON converted to JavaScript object
+    ↓
+data
+    ↓
+console.log(data)
+
+*/
+
+
+
+//--------------------------------------------------------------------------------------------------------------------------
+
 const promiseOne = new Promise(function(resolve, reject){
     //Do an Async task
     //DB calls, cyptography, network
